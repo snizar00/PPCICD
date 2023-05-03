@@ -1,0 +1,102 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "InventOnHand_Connector",
+    "version": "1.0"
+  },
+  "paths": {
+    "/weatherforecast": {
+      "get": {
+        "tags": [
+          "InventOnHand, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        ],
+        "operationId": "GetWeatherForecast",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/WeatherForecast"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "DateOnly": {
+      "type": "object",
+      "properties": {
+        "year": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "month": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "day": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dayOfWeek": {
+          "$ref": "#/definitions/DayOfWeek"
+        },
+        "dayOfYear": {
+          "format": "int32",
+          "type": "integer",
+          "readOnly": true
+        },
+        "dayNumber": {
+          "format": "int32",
+          "type": "integer",
+          "readOnly": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "DayOfWeek": {
+      "format": "int32",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "type": "integer"
+    },
+    "WeatherForecast": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "$ref": "#/definitions/DateOnly"
+        },
+        "temperatureC": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "temperatureF": {
+          "format": "int32",
+          "type": "integer",
+          "readOnly": true
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "host": "5lm9h9hb-7276.usw2.devtunnels.ms",
+  "schemes": [
+    "https"
+  ]
+}
