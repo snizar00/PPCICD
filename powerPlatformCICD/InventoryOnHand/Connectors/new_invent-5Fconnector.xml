@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Connector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <connectorid>cbd281f7-a1e9-ed11-a7c5-6045bd033774</connectorid>
+  <description></description>
+  <displayname>Invent_Connector</displayname>
+  <iconbrandcolor>#007ee5</iconbrandcolor>
+  <name>new_invent-5Fconnector</name>
+  <connectortype>1</connectortype>
+  <openapidefinition>/Connector/new_invent-5Fconnector_openapidefinition.json</openapidefinition>
+  <connectionparameters>/Connector/new_invent-5Fconnector_connectionparameters.json</connectionparameters>
+  <policytemplateinstances>/Connector/new_invent-5Fconnector_policytemplateinstances.json</policytemplateinstances>
+</Connector>
